@@ -1,0 +1,16 @@
+{
+	"name": "Lunch Out",
+	"version": "1.0",
+	"description": "Allows you to see who in the office is eating lunch out today and where at!",
+	"manifest_version": 2,
+	"permissions": ["http://*/", "storage"],
+	"options_page": "options.html",
+	"background": {
+		"scripts": ["background.js"]
+	},
+	"browser_action": {
+		"default_title": "",
+		"default_icon": "status-unknown.png",
+		"default_popup": "popup.html"
+	}
+}

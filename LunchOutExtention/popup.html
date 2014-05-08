@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Lunch Out</title>
+    <style>
+      body {
+        min-width: 400px;
+        overflow-x: hidden;
+      }
+    </style>
+    <!--
+      - JavaScript and HTML must be in separate files: see our Content Security
+      - Policy documentation[1] for details and explanation.
+      -
+      - [1]: http://developer.chrome.com/extensions/contentSecurityPolicy.html
+     -->
+    <script src="popup.js"></script>
+  </head>
+  <body>
+  <div>Office peeps eating out today:</div>
+  <hr/>
+  <div id="orders"></div>
+  <hr/>
+  <div>Sign up:</div>
+  <div>
+    <input id="signUpName" type="text" placeholder="Your name" /> <input id="signUpPlace" type="text" placeholder="Place" /> <input id="signUpTime" type="text" placeholder="Time" /> <button id="signUpBTN">I'm going yo!</button>
+  </div>
+  </body>
+</html>
+
