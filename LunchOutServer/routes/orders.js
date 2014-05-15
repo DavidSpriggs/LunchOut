@@ -8,7 +8,7 @@ var db = mongojs('JJsOrderServer', ['orders']);
 router.get('/add', function(req, res) {
 	if (req.query.name && req.query.place && req.query.time) {
 		var d = new Date();
-		var dateQuery = d.getDay() + '/' + (d.getMonth() + 1) + '/' + d.getFullYear();
+		var dateQuery = d.getDate() + '/' + (d.getMonth() + 1) + '/' + d.getFullYear();
 		db.orders.save({
 			date: dateQuery,
 			name: req.query.name,
@@ -46,7 +46,7 @@ router.get('/remove/:id', function(req, res) {
 
 router.get('/list', function(req, res) {
 	var d = new Date();
-	var dateQuery = d.getDay() + '/' + (d.getMonth() + 1) + '/' + d.getFullYear();
+	var dateQuery = d.getDate() + '/' + (d.getMonth() + 1) + '/' + d.getFullYear();
 	db.orders.find({
 		date: dateQuery
 	}, function(err, docs) {
@@ -59,7 +59,7 @@ router.get('/list', function(req, res) {
 
 router.get('/count', function(req, res) {
 	var d = new Date();
-	var dateQuery = d.getDay() + '/' + (d.getMonth() + 1) + '/' + d.getFullYear();
+	var dateQuery = d.getDate() + '/' + (d.getMonth() + 1) + '/' + d.getFullYear();
 	db.orders.count({
 		date: dateQuery
 	}, function(err, count) {

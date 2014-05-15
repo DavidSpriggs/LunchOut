@@ -83,6 +83,9 @@
 				}
 
 				callback(orders, count);
+			} else {
+				//fire off to check again
+				timer = setTimeout(triggerStatusCheck, 10000);
 			}
 		};
 		xmlhttp.open("GET", ordersServer + "/orders/count", true);
