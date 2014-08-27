@@ -2,6 +2,11 @@
 	"name": "Lunch Out",
 	"version": "1.0",
 	"description": "Allows you to see who in the office is eating lunch out today and where at!",
+	"icons": {
+		"16": "icon16.png",
+		"48": "icon48.png",
+		"128": "icon128.png"
+	},
 	"manifest_version": 2,
 	"permissions": ["http://*/", "storage"],
 	"options_page": "options.html",

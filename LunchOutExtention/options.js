@@ -18,7 +18,7 @@ function save_options() {
 function restore_options() {
   // Use default value serverUrl= http://localhost:3080
   chrome.storage.sync.get({
-    serverUrl: 'http://localhost:3080'
+    serverUrl: 'http://stlnode.esri.com:3080'
   }, function(items) {
     document.getElementById('serverUrl').value = items.serverUrl;
   });

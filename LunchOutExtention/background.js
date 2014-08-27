@@ -9,7 +9,7 @@
 		clearTimeout(timer);
 
 		chrome.storage.sync.get({
-			serverUrl: 'http://localhost:3080'
+			serverUrl: 'http://stlnode.esri.com:3080'
 		}, function(items) {
 			ordersServer = items.serverUrl;
 			//hit server to see if there are orders
